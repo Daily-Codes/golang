@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -35,5 +36,8 @@ func main() {
 	// force convert number to string
 	var o int = 65
 	p := string(o)
-	fmt.Println(p)
+	fmt.Println(p) // eoutput 'A'
+
+	q := strconv.Itoa(o)
+	fmt.Println(q)
 }
